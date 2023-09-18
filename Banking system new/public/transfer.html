@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+    
+
+    <style>
+        
+        body {
+            background-color: #343838;
+        }
+
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 40px 40px;
+            margin-top: 50px;
+            background-color: #fff;
+            width: 310px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            font-weight: normal;
+            color: #CC0C39;
+        }
+
+        
+        .field {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        input {
+            font-size: 16px;
+            padding: 10px 10px 10px 0;
+            display: block;
+            width: 300px;
+            border: none;
+            border-bottom: 1px solid #757575;
+            outline: none;
+        }
+
+        
+        label {
+            color: #999;
+            font-size: 14px;
+            position: absolute;
+            
+            pointer-events: none;
+            top: 10px;
+            
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        
+        input:focus ~ label, input:valid ~ label {
+       
+            top: -20px;
+            color: #008C9E;
+        }
+
+       
+        .bar:before,
+        .bar:after {
+            content: '';
+            
+            height: 1px;
+            width: 0;
+            position: absolute;
+            background: #008C9E;
+           
+            transition: 0.2s ease all;
+            -moz-transition: 0.2s ease all;
+            -webkit-transition: 0.2s ease all;
+        }
+
+        input:focus ~ .bar:before, input:focus ~ .bar:after {
+            
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Transfer Money</h2>
+        <form method="post">
+            <div class="field">
+                <input type="text" name="sender" id="sender" required>
+                <span class="bar"></span>
+                <label>Sender</label>
+            </div>
+            <div class="field">
+                <input type="text" name="receiver" id="receiver" required>
+                <span class="bar"></span>
+                <label>Receiver</label>
+            </div>
+            <div class="field">
+                <input type="text" name="amount" id="amount" required>
+                <span class="bar"></span>
+                <label>Amount</label>
+            </div>
+            <input type="submit" value="Transfer">
+        </form>
+    </div>
+</body>
+</html>

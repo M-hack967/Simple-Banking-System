@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(129, 17, 235);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            list-style-type: none;
+        }
+
+        li {
+            margin-left: 30px;
+            color: white;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .sub1 {
+            flex-grow: 3;
+            margin-left: 20px;
+        }
+
+        .sub2 {
+            flex-grow: 7;
+        }
+
+        li:hover {
+            opacity: 0.9;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .sub3,
+        .sub4 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .sub3,
+        .sub4 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading1,
+        .heading2 {
+            font-size: 80px;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        .heading2 {
+            font-size: 20px;
+            text-shadow: none;
+            word-spacing: 6px;
+            margin-left: 20px;
+        }
+
+        .image2 {
+            width: 450px;
+            height: 400px;
+            margin-top: 50px;
+        }
+
+        .image3 {
+            width: 300px;
+            height: 500px;
+            position: absolute;
+            top: 15%;
+        }
+
+        .butt3 {
+            width: 150px;
+            height: 60px;
+            border-radius: 30px;
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                background-color: rgb(129, 17, 235);
+            }
+
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .section {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .heading2 {
+                font-size: 100px;
+                width: 100%;
+                height: 600px;
+            }
+
+            .image3 {
+                position: absolute;
+                top: 1175px;
+                width: 200px;
+                height: 300px;
+            }
+
+            .image2 {
+                width: 300px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="sub2">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="transfer.html">Transfer Money</a></li>
+                    <li><a href="select_customer.html">Pick Customer</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="sub3">
+                <h1 class="heading1">Prosperity Bancorp</h1>
+                <p class="heading2">Explore our services and manage your finances with ease.</p>
+            </div>
+            <div class="sub4">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-07/03/full/1688406565-8011.jpg?im=FeatureCrop,size=(826,465)" class="image2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
